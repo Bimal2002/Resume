@@ -260,94 +260,225 @@
         <section id="portfolio">
             <h1 class="section-heading mb75px">
                 <span>
-                    <i class="fas fa-th-list"></i>
+                    <i class="fas fa-code-branch"></i>
                 </span>
                 <span>Major Projects</span>
             </h1>
 
             <div id="portfolio-container">
 
-                <div class="portfolio-image-container">
-                    <img src="tree.jpeg" alt="Forest Fire Management">
-                    <div class="portfolio-details">
+                <div class="project-card">
+                    <div class="project-header">
                         <h3>Forest Fire Management and Restoration</h3>
-                        <h5>BTP-II, IIT Kharagpur | Jan'25 - Apr'25</h5>
-                        <p><strong>Technologies:</strong> Python, Reinforcement Learning, OpenAI Gym, React, FastAPI</p>
-                        <ul>
-                            <li>Applied RL within MDP framework for fire management simulation</li>
-                            <li>Integrated INPE datasets (1999-2019) with ecological features</li>
-                            <li>Built React-FastAPI dashboard for policy visualization</li>
-                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Bimal2002" target="_blank" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-timeline"><i class="far fa-calendar"></i> BTP-II, IIT Kharagpur | Jan'25 - Apr'25</p>
+                    <p class="project-description">
+                        Applied <strong>reinforcement learning</strong> within an MDP framework to model and optimize dynamic forest fire management simulation. 
+                        Architected a custom <strong>Gym Environment</strong> to simulate fire spread with deforestation, fire regrowth, and ENSO-driven variations.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Integrated INPE datasets (1999-2019) on fires, deforestation, and ENSO indices with synthetic ecological features</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Trained PPO, DQN, and A2C agents, with PPO achieving most stable and optimal long-term fire formations</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Developed an interactive React-FastAPI dashboard for visualizing RL policies and ecological outcomes</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Reinforcement Learning</span>
+                        <span class="tech-tag">OpenAI Gym</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">INPE Datasets</span>
                     </div>
                 </div>
 
-                <div class="portfolio-image-container">
-                    <img src="project.jpeg" alt="Bengali Character Recognition">
-                    <div class="portfolio-details">
+                <div class="project-card">
+                    <div class="project-header">
                         <h3>Bengali Handwritten Character Recognition</h3>
-                        <h5>BTP-I, IIT Kharagpur | Aug'24 - Nov'24</h5>
-                        <p><strong>Technologies:</strong> Python, CNNs, ResNet, MobileNet, PyTorch</p>
-                        <ul>
-                            <li>Compared CNNs and Lightweight models (15k images, 50 classes)</li>
-                            <li>Achieved 92.5% accuracy with Dilated ResNet</li>
-                            <li>Implemented SE-channel, transfer learning, and ensemble models</li>
-                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Bimal2002" target="_blank" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-timeline"><i class="far fa-calendar"></i> BTP-I, IIT Kharagpur | Aug'24 - Nov'24</p>
+                    <p class="project-description">
+                        Compared various <strong>CNN architectures</strong> and <strong>Lightweight models</strong> for Bengali handwritten character recognition study. 
+                        Worked on a dataset of <strong>15,000 grayscale images</strong> (50 classes) with 12k training and 3k labelled validation samples.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Implemented ResNet with key preprocessing, very deep pretrained MobileNetV2, DenseNet121</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Achieved 92.5% top accuracy with Dilated ResNet (rate=2), surpassing baseline CNs (87%) and MobileNetV2 (63.9%)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Adopted augmentation, SE-channel, recalibration, transfer learning, ensemble compatible comparison models</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">CNNs</span>
+                        <span class="tech-tag">ResNet</span>
+                        <span class="tech-tag">MobileNetV2</span>
+                        <span class="tech-tag">Transfer Learning</span>
                     </div>
                 </div>
 
-                <div class="portfolio-image-container">
-                    <img src="project1.jpeg" alt="Spam Email Detection">
-                    <div class="portfolio-details">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>MindfulBot AI-Powered Mental Health Chatbot</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Bimal2002" target="_blank" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-timeline"><i class="far fa-calendar"></i> Self-Project | Jun'25 - Jul'25</p>
+                    <p class="project-description">
+                        Built an AI chatbot using sentiment analysis (Naive Bayes, Logistic Regression, OpenAI API). 
+                        Developed backend with <strong>Node.js, Express.js</strong> and <strong>MongoDB Atlas</strong>, used JWT and bcryptjs for secure authentication.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Created frontend subscription schema, helmet, CORS for secure API requests and auto-scheduled analytics</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Designed MongoDB models for conversations and assessments with automated scoring (PHQ-9, GAD-7 etc tests)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Integrated Nodemailer to automate email communication and effectively enhance engagement with customers</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">bcryptjs</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
                         <h3>Spam Email Detection</h3>
-                        <h5>Self Project | Aug'24 - Sep'24</h5>
-                        <p><strong>Technologies:</strong> Python, TF-IDF, Random Forest, Flask, HTML/CSS/JS</p>
-                        <ul>
-                            <li>ML web app with supervised learning (98% accuracy)</li>
-                            <li>Processed text via TF-IDF and RecursiveCharacterTextSplitter</li>
-                            <li>Deployed on Vercel with Flask backend</li>
-                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Bimal2002" target="_blank" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-timeline"><i class="far fa-calendar"></i> Self Project | Aug'24 - Sep'24</p>
+                    <p class="project-description">
+                        Developed a robust, end-to-end <strong>ML-based web application</strong> to classify emails as spam or non-spam using supervised learning. 
+                        Processed text via <strong>TF-IDF vectorization</strong>, RecursiveCharacterTextSplitter, and Naive Bayes classifier.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Attained 98% accuracy with Random Forest, sustaining high precision, recall, F1 class weighting, thresholding</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Built a lightweight HTML/CSS/JS frontend connected to a Flask backend for listing, testing deployment on Vercel</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TF-IDF</span>
+                        <span class="tech-tag">Random Forest</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">HTML/CSS/JS</span>
+                        <span class="tech-tag">Vercel</span>
                     </div>
                 </div>
 
-                <div class="portfolio-image-container">
-                    <img src="project_3.png" alt="EV Data Dashboard">
-                    <div class="portfolio-details">
+                <div class="project-card">
+                    <div class="project-header">
                         <h3>EV Data Dashboard</h3>
-                        <h5>Self Project | Jan'24 - Feb'24</h5>
-                        <p><strong>Technologies:</strong> React.js, Chart.js, Pandas, NumPy, Seaborn</p>
-                        <ul>
-                            <li>Interactive dashboard analyzing ~200K EV records</li>
-                            <li>ETL pipeline with detailed EDA for adoption trends</li>
-                            <li>Dynamic visualizations with React.js + Chart.js</li>
-                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Bimal2002" target="_blank" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-timeline"><i class="far fa-calendar"></i> Self Project | Jan'24 - Feb'24</p>
+                    <p class="project-description">
+                        Built an <strong>interactive dashboard</strong> to comprehensively analyze EV adoption trends, pricing distribution, and overall energy efficiency. 
+                        Processed an <strong>ETL pipeline (~200K records)</strong> of make, model, year, price range, using Pandas, NumPy, Seaborn.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Performed detailed EDA to identify adoption trends, pricing distribution, and efficiency trade-offs across EV types</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Developed an interactive React.js + Chart.js dashboard using JSON data for dynamic visualizations</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Seaborn</span>
+                        <span class="tech-tag">ETL</span>
                     </div>
                 </div>
 
-                <div class="portfolio-image-container">
-                    <img src="codezen.png" alt="MindfulBot Chatbot">
-                    <div class="portfolio-details">
-                        <h3>MindfulBot AI Mental Health Chatbot</h3>
-                        <h5>Self-Project | Jun'25 - Jul'25</h5>
-                        <p><strong>Technologies:</strong> Node.js, Express.js, MongoDB, OpenAI API, JWT</p>
-                        <ul>
-                            <li>AI chatbot with sentiment analysis (Naive Bayes, Logistic Regression)</li>
-                            <li>Designed MongoDB models with automated scoring (PHQ-9, GAD-7)</li>
-                            <li>Secure authentication with JWT and bcryptjs</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="portfolio-image-container">
-                    <img src="project3.jpeg" alt="Crypto Portfolio">
-                    <div class="portfolio-details">
+                <div class="project-card">
+                    <div class="project-header">
                         <h3>Crypto Portfolio App</h3>
-                        <h5>Self Project | May'24 - Jun'24</h5>
-                        <p><strong>Technologies:</strong> MERN Stack, Razorpay, Cloudinary, Vercel</p>
-                        <ul>
-                            <li>Decentralized crypto portfolio with payment gateway</li>
-                            <li>Integrated Razorpay and Cloudinary for media management</li>
-                            <li>Admin panel with MERN stack deployed on Vercel</li>
-                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/Bimal2002" target="_blank" title="View on GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-timeline"><i class="far fa-calendar"></i> Self Project | May'24 - Jun'24</p>
+                    <p class="project-description">
+                        Developed a full-stack website with user authentication, content management, payment gateway to streamline online learning. 
+                        Designed and deployed across catalog, coursework, with cross-browser compatibility workflows.
+                    </p>
+                    <div class="project-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Integrated Razorpay for seamless payment processing and Cloudinary for efficient media management solutions</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Developed admin panel using MERN stack to manage users, courses, analytics on dashboard</span>
+                        </div>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">MERN Stack</span>
+                        <span class="tech-tag">Razorpay</span>
+                        <span class="tech-tag">Cloudinary</span>
+                        <span class="tech-tag">Vercel</span>
+                        <span class="tech-tag">JWT</span>
                     </div>
                 </div>
 
@@ -514,15 +645,17 @@
         };
 
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+            entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.portfolio-image-container').forEach(card => {
+        document.querySelectorAll('.project-card').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -538,7 +671,7 @@
             }
         });
 
-        // Mobile menu toggle (for future responsive design)
+        // Mobile menu toggle
         const createMobileMenu = () => {
             const nav = document.querySelector('nav');
             const menuBtn = document.createElement('div');
@@ -558,6 +691,23 @@
 
         window.addEventListener('resize', createMobileMenu);
         createMobileMenu();
+
+        // Add stagger animation to tech tags on hover
+        document.querySelectorAll('.project-card').forEach(card => {
+            const techTags = card.querySelectorAll('.tech-tag');
+            card.addEventListener('mouseenter', () => {
+                techTags.forEach((tag, index) => {
+                    setTimeout(() => {
+                        tag.style.transform = 'translateY(-2px)';
+                    }, index * 50);
+                });
+            });
+            card.addEventListener('mouseleave', () => {
+                techTags.forEach(tag => {
+                    tag.style.transform = 'translateY(0)';
+                });
+            });
+        });
     </script>
 
 </body>
